@@ -1,6 +1,6 @@
 # @uswriting/exiftool
 
-[ExifTool](https://exiftool.org) (13.42) powered by WebAssembly to extract and write metadata from files in browsers and Node.js environments using [zeroperl](https://github.com/uswriting/zeroperl).
+[ExifTool](https://exiftool.org) (13.42) powered by WebAssembly to extract and write metadata from files in browsers and Node.js environments using [zeroperl](https://github.com/colorhythm/zeroperl).
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install @uswriting/exiftool
 
 ## Description
 
-This package provides a WebAssembly-based implementation of ExifTool that works in both browser and Node.js environments. It leverages [zeroperl](https://github.com/uswriting/zeroperl) to execute ExifTool without requiring any native binaries or system dependencies.
+This package provides a WebAssembly-based implementation of ExifTool that works in both browser and Node.js environments. It leverages [zeroperl](https://github.com/colorhythm/zeroperl) to execute ExifTool without requiring any native binaries or system dependencies.
 
 ## Usage
 
@@ -35,7 +35,7 @@ document.querySelector('input[type="file"]').addEventListener('change', async (e
 ### Writing Metadata
 
 ```typescript
-import { writeMetadata } from '@uswriting/exiftool';
+import { writeMetadata } from '@colorhythm/exiftool';
 
 const result = await writeMetadata(file, {
   'Author': 'John Doe',
@@ -52,7 +52,7 @@ if (result.success) {
 ### Extracting Specific Metadata
 
 ```typescript
-import { parseMetadata } from '@uswriting/exiftool';
+import { parseMetadata } from '@colorhythm/exiftool';
 
 const result = await parseMetadata(file, {
   args: ['-Author', '-CreateDate', '-Make', '-Model']
@@ -66,7 +66,7 @@ if (result.success) {
 ### JSON Output
 
 ```typescript
-import { parseMetadata } from '@uswriting/exiftool';
+import { parseMetadata } from '@colorhythm/exiftool';
 
 const result = await parseMetadata(file, {
   args: ['-json', '-n'],
