@@ -1,4 +1,4 @@
-# @uswriting/exiftool
+# @colorhythm/exiftool
 
 [ExifTool](https://exiftool.org) (13.42) powered by WebAssembly to extract and write metadata from files in browsers and Node.js environments using [zeroperl](https://github.com/colorhythm/zeroperl).
 
