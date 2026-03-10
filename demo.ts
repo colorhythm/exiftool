@@ -1,5 +1,5 @@
 //@ts-expect-error: Ignore wasm import issue
-import zeroperl from "@colorhythm/zeroperl-ts/zeroperl.wasm";
+import zeroperl from "@colorhythm/zeroperl.wasm";
 import { parseMetadata, writeMetadata } from "./src/index";
 
 document.addEventListener("DOMContentLoaded", () => {

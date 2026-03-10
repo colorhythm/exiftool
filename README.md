@@ -1,6 +1,6 @@
 # @colorhythm/exiftool
 
-[ExifTool](https://exiftool.org) (13.42) powered by WebAssembly to extract and write metadata from files in browsers and Node.js environments using [zeroperl](https://github.com/colorhythm/zeroperl).
+[ExifTool](https://exiftool.org) (13.52) powered by WebAssembly to extract and write metadata from files in browsers and Node.js environments using [zeroperl](https://github.com/colorhythm/zeroperl).
 
 ## Installation
 
@@ -23,7 +23,7 @@ import { parseMetadata } from '@colorhythm/exiftool';
 document.querySelector('input[type="file"]').addEventListener('change', async (event) => {
   const file = event.target.files[0];
   const result = await parseMetadata(file);
-  
+
   if (result.success) {
     console.log(result.data);
   } else {

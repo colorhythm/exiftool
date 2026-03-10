@@ -82,6 +82,6 @@
     "vitest": "^4.0.15"
   },
   "dependencies": {
-    "@colorhythm/zeroperl-ts": "1.0.10"
+      "@colorhythm/zeroperl-ts": "file:../zeroperl-ts"
   }
 }
